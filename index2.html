@@ -3,21 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Day One of three.js</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-	<h1>Creating in three.js</h1>
-	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="http://threejs.org/build/three.min.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
 	<script>
 		var scene = new THREE.Scene();
 		var camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
-		var renderer = new THREE.WebGLRenderer( {alpha:true} );
+		var renderer = new THREE.WebGLRenderer();
 
 		renderer.setSize(window.innerWidth/1.5, window.innerHeight/1.5);
-		renderer.setClearColor(0x000000,0);
+		renderer.setClearColor(0x3399ff);
 		document.body.appendChild(renderer.domElement);
 
 		// width, height, depth

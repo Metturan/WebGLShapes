@@ -1,0 +1,21 @@
+h1 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family:'Roboto',sans-serif;
+}
+
+body {
+	  background: repeating-radial-gradient(
+	  circle at 0 0, 
+      #eee,
+      #ccc 50px
+    );
+	min-height: 100%;
+
+}
+
+html {
+	min-height: 100%;
+}
